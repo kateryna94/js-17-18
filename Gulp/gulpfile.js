@@ -53,6 +53,6 @@ gulp.task('mincss', function() {
 gulp.task('watch', ['browser-sync', 'sass', 'mincss', 'scripts', 'compress'], function() {
     gulp.watch('app/sass/**/*.+(scss|sass)', ['sass']);
     gulp.watch('app/js/**/*.js', ['scripts']);
-    gulp.watch('dist/**/*.css', ['mincss']);
+    gulp.watch('app/css/*.css', ['mincss']);
     gulp.watch('app/js/src/all.js', ['compress']);
 });
